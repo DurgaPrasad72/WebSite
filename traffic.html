@@ -1,0 +1,51 @@
+<html>
+    <head><title>Traffic lights</title></head>
+    <style>
+        .outer-block{
+            width:120px;
+            border:1px solid #000;
+            margin:20px;
+        }
+        .red,.yellow,.green{
+            border-radius:50%;
+            height:100px;
+            width:100px;
+            border:1px solid;
+        }
+    </style>
+    <body>
+        <div class="outer-block">
+            <div class="red" id="red">
+
+            </div>
+            <div class="yellow" id="yellow">
+                
+            </div>
+            <div class="green" id="green">
+                </div>
+        </div>
+                <button onclick="getcolor('red')">red</button>
+                <button onclick="getcolor('yellow')">yellow</button>
+                <button onclick="getcolor('orange')">orange</button>
+                <script>
+                    function getcolor(color){
+                          switch(color){
+                              case 'red':{
+                                  document.getElementById('red').style.backgroundcolor='red';
+                                  document.getElementById('yellow').style.backgroundcolor='red';
+                                  document.getElementById('').style.backgroundcolor='red';
+                                  break;
+                              }
+                              case 'yellow':{
+                                  document.getElementById('yellow').style.backgroundcolor='yellow';
+                                  break;
+                              }
+                              case 'red':{
+                                  document.getElementById('orange').style.backgroundcolor='orange';
+                                  break;
+                              }
+                          }
+                    }
+                </script>
+    </body>
+</html>
